@@ -5,4 +5,4 @@ This implementation has mainly been based on this great repository: [deep-text-r
 ## Update feature
 + support **variable** length of squence training and inference (fixed height).
 + **Chinese** character recognition.
-+ **Joint CTC-Attention** implementation.
++ **Joint CTC-Attention**
