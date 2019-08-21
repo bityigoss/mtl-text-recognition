@@ -6,9 +6,10 @@ multi-task learning for text recognition with joint ctc-attention.
 + **Joint CTC-Attention**
 ## Getting Started
 ### Dependency
-- This work was tested with PyTorch 1.1.0, CUDA 9.0, python 3.6 and Ubuntu 16.04. <br> You may need `pip3 install torch==1.1.0`
-- requirements : lmdb, pillow, torchvision, nltk, natsort
+- This work was tested with PyTorch 1.1.0, CUDA 9.0, python 3.6 and centos7 
+- requirements : pytorch, lmdb, pillow, torchvision, nltk, natsort
 ```
+pip3 install torch==1.1.0
 pip3 install lmdb pillow torchvision nltk natsort
 ```
 ### Run demo with pretrained model(Chinese version)
