@@ -174,8 +174,10 @@ class LmdbDataset(Dataset):
                 label = label.lower()
 
             # We only train and evaluate on alphanumerics (or pre-defined character set in train.py)
-            out_of_char = f'[^{self.opt.character}]'
-            label = re.sub(out_of_char, '', label)
+            #out_of_char = f'[^{self.opt.character}]'
+            #out_of_char = r'[^{}]'.format(self.opt.character)
+            #print(label)
+            #label = re.sub(out_of_char, '', label)
 
         return (img, label)
 
@@ -216,15 +218,6 @@ class RawDataset(Dataset):
 
         return (img, self.image_path_list[index])
 
-#
-# class PilImageData(Dataset):
-#     def __init__(self, data_list):
-#         self.data_list
-#         self.nSamples = len(data_list)
-#
-#     def __len__(self):
-#         return self.nSamples
-
 
 class ResizeNormalize(object):
 
@@ -234,7 +227,8 @@ class ResizeNormalize(object):
         self.toTensor = transforms.ToTensor()
 
     def __call__(self, img):
-        img = img.resize(self.size, self.interpolation)
+        if not self.size[0] == 32:
+            img = img.resize(self.size, self.interpolation)
         img = self.toTensor(img)
         img.sub_(0.5).div_(0.5)
         return img
