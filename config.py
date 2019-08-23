@@ -26,7 +26,6 @@ class ConfigOpt:
         self.hidden_size = 256
         self.num_gpu = torch.cuda.device_count()
         self.char_dict = "config/chn_dict.txt"
-        # self.char_dict = "config/char_std_5990.txt"
         self.character = self.get_character()
 
     def get_character(self):
