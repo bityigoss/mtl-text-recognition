@@ -123,9 +123,22 @@ if __name__ == '__main__':
     # opt.num_gpu = torch.cuda.device_count()
     opt = ConfigOpt()
     ocr_rec = OcrRec(opt=opt)
-    # image_path = "../data/warp_images/0_78afa67e98d411e991470026b9556fb1_1.mp4_25.0_125.68_3142.jpg"
     image_path = sys.argv[1]
-    ocr_rec.text_rec(image_path)
+    if os.path.isfile(image_path):
+        res_text = ocr_rec.text_rec(image_path)
+        print(f"{image_path.split(os.path.sep)[-1]}\t{res_text}")
+    elif os.path.isdir(image_path):
+        image_list = os.listdir(image_path)
+        for image_file in image_list:
+            suffix = image_file.split('.')[-1]
+            if suffix not in ('jpg', 'jpeg', 'png'):
+                continue
+            img_path = os.path.join(image_path, image_file)
+            if not os.path.isfile(img_path):
+                print(f"not file {img_path}")
+                continue
+            res_text = ocr_rec.text_rec(img_path)
+            print(f"{image_file}\t{res_text}")
 
 
 
