@@ -4,7 +4,7 @@ multi-task learning for text recognition with joint ctc-attention.
 + support **variable** length of squence training and inference (fixed height).
 + **Chinese** character recognition.
 + **Joint CTC-Attention**<br><br>
-<img src="./figures/mtl_arch.png" width="516" title="CTC-Attention model architecture"> <br><br>
+<img src="./figures/mtl_arch.png" width="480" title="CTC-Attention model architecture"> <br><br>
 ## Getting Started
 ### Dependency
 - This work was tested with PyTorch 1.1.0, CUDA 9.0, python 3.6 and centos7 
@@ -13,9 +13,8 @@ multi-task learning for text recognition with joint ctc-attention.
 pip3 install torch==1.1.0
 pip3 install lmdb pillow torchvision nltk natsort
 ```
-### Run demo with pretrained model(Chinese version)
-中文+英文字符版本，使用config中的chn.txt文件
-1. Download pretrained model(crnn) from [baidu](链接:https://pan.baidu.com/s/1k6__hYRdq8BnyihP8ImLWw)code:iiw7
+### Run demo with pretrained model(中文+英文字符版本，使用config中的chn.txt文件)
+1. Download pretrained model(crnn) from [baidu](https://pan.baidu.com/s/1k6__hYRdq8BnyihP8ImLWw)code:iiw7<br>
 pretrained crnn model configuration:
 ```
 --output_channel 512 \
