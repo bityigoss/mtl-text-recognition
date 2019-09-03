@@ -6,7 +6,6 @@
 *.mdb
 *.pth
 *.tar
-*.txt
 *.ipynb
 *.zip
 *.eps
