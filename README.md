@@ -14,7 +14,7 @@ pip3 install torch==1.1.0
 pip3 install lmdb pillow torchvision nltk natsort
 ```
 ### Run demo with pretrained model(中文+英文字符版本，使用config中的chn.txt文件)
-1. Download pretrained model(crnn) from [baidu](https://pan.baidu.com/s/1k6__hYRdq8BnyihP8ImLWw)code:iiw7<br>
+1. Download pretrained model(crnn) from [baidu](https://pan.baidu.com/s/1tsqdunmZQV17ckqllP4YJw) code:un8d<br>
 pretrained crnn model configuration:
 ```
 --output_channel 512 \
@@ -23,11 +23,11 @@ pretrained crnn model configuration:
 --FeatureExtraction ResNet \
 --SequenceModeling BiLSTM \
 --Prediction CTC \
---experiment_name none_resnet_bilstm_ctc
---continue_model saved_models/pretrained_model.pth
+--continue_model saved_models/best_accuracy.pth
 ```
 run demo with pretrained mdoel.
 ```
+# change config.py file and run:
 CUDA_VISIBLE_DEVICES=0 python3 infer.py ${image_path}
 ```
 2. CTC-Attention pretrained model will release later.
@@ -47,7 +47,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py \
   	--FeatureExtraction ResNet \
   	--SequenceModeling BiLSTM \
   	--Prediction CTC \
-  	--experiment_name none_resnet_bilstm_ctc
+  	--experiment_name none_resnet_bilstm_ctc \
   	--continue_model saved_models/pretrained_model.pth
 ```
 2. Train CTC-Attention model
@@ -66,7 +66,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py \
   	--Prediction CTC \
   	--mtl \
   	--without_prediction \
-  	--experiment_name none_resnet_bilstm_ctc
+  	--experiment_name none_resnet_bilstm_ctc \
   	--continue_model saved_models/pretrained_model.pth
 ```
 ### prediction results
