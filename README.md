@@ -36,15 +36,15 @@ CUDA_VISIBLE_DEVICES=0 python3 infer.py ${image_path}
 |     ---      |     ---      |     ---      |
 <img src="./demo_images/demo_0.jpg" width="300">    |   同达电动车配件   |     |
 | <img src="./demo_images/demo_1.jpg" width="300">    |   微信14987227   |     |
-| <img src="./demo_images/demo_2.jpg" width="300">      |   快乐大本营20190629期:张艺兴李荣浩惊喜同台合唱彭昱畅破音三连引     |       |
+| <img src="./demo_images/demo_2.png" width="300">      |   快乐大本营20190629期:张艺兴李荣浩惊喜同台合唱彭昱畅破音三连引     |       |
 | <img src="./demo_images/demo_3.png" width="300">  |   每周三中午12:00   |     |
 | <img src="./demo_images/demo_4.png" width="300">      |   整套征兵甄别程序的一个部分     |       |
-| <img src="./demo_images/demo_5.png" width="300" height="100">    |   再热烈的鼓掌   |     |
-| <img src="./demo_images/demo_6.png" width="300" height="100">      |   厂外恒升拆车件     |       |
+| <img src="./demo_images/demo_5.png" width="300">    |   再热烈的鼓掌   |     |
+| <img src="./demo_images/demo_6.png" width="300">      |   厂外恒升拆车件     |       |
 | <img src="./demo_images/demo_7.png" width="300">    |   我想说你为什么   |     |
 | <img src="./demo_images/demo_8.jpg" width="300">      |    我抱吧他在你怀里一直在哭    |       |
-| <img src="./demo_images/demo_9.jpg" width="300" height="100">    |   如果没有这个阿姨的话   |     |
-| <img src="./demo_images/demo_10.jpg" width="300" height="100">      |    因为我觉得有你了我才有安全感    |       |
+| <img src="./demo_images/demo_9.jpg" width="300">    |   如果没有这个阿姨的话   |     |
+| <img src="./demo_images/demo_10.jpg" width="300">      |    因为我觉得有你了我才有安全感    |       |
 
 ### Training and evaluation
 1. Train CRNN model
