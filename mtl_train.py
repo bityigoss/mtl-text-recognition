@@ -184,7 +184,7 @@ def train(opt):
                 model.train()
 
                 for pred, gt in zip(preds[:5], labels[:5]):
-                    if 'Attn' in opt.Prediction:
+                    if 'Attn' in opt.Prediction or opt.mtl:
                         pred = pred[:pred.find('[s]')]
                         gt = gt[:gt.find('[s]')]
                     print(f'{pred:20s}, gt: {gt:20s},   {str(pred == gt)}')
