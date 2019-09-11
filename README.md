@@ -42,9 +42,9 @@ CUDA_VISIBLE_DEVICES=0 python3 infer.py ${image_path}
 | <img src="./demo_images/demo_5.png" width="300">    |   再热烈的鼓掌   |     |
 | <img src="./demo_images/demo_6.png" width="300">      |   厂外恒升拆车件     |       |
 | <img src="./demo_images/demo_7.png" width="300">    |   我想说你为什么   |     |
-| <img src="./demo_images/demo_8.jpg" width="300">      |    我抱吧他在你怀里一直在哭    |       |
-| <img src="./demo_images/demo_9.jpg" width="300">    |   如果没有这个阿姨的话   |     |
-| <img src="./demo_images/demo_10.jpg" width="300">      |    因为我觉得有你了我才有安全感    |       |
+| <img src="./demo_images/demo_8.png" width="300">      |    我抱吧他在你怀里一直在哭    |       |
+| <img src="./demo_images/demo_9.png" width="300">    |   如果没有这个阿姨的话   |     |
+| <img src="./demo_images/demo_10.png" width="300">      |    因为我觉得有你了我才有安全感    |       |
 
 ### Training and evaluation
 1. Train CRNN model
