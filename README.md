@@ -22,8 +22,7 @@ pretrained crnn model configuration:
 --Transformation None \
 --FeatureExtraction ResNet \
 --SequenceModeling BiLSTM \
---Prediction CTC \
---continue_model saved_models/best_accuracy.pth
+--Prediction CTC 
 ```
 run demo with pretrained mdoel.
 ```
